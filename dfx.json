@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "ipfstore_backend": {
+      "main": "src/ipfstore_backend/main.mo",
+      "type": "motoko"
+    },
+    "ipfstore_frontend": {
+      "dependencies": [
+        "ipfstore_backend"
+      ],
+      "source": [
+        "src/ipfstore_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "ipfstore_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
